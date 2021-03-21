@@ -45,7 +45,7 @@ div.summary span.star {
     padding-left: 15px;
     padding-right: 10px;
 }  
-ul#todolist .todo_item.completed label {
+ul#todolist .todo_item.completed label  {
     text-decoration: line-through;
     color: #999;
   }      
