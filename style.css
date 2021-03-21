@@ -1,0 +1,59 @@
+body {
+    width: 25%;
+    margin:auto;
+    text-align: center ;
+    font-family: Poppins, sans-serif;
+    
+}
+div.wrapper{  
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+h1{
+    font-family: 'Abril Fatface', serif;
+}
+
+p.summary  {
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    padding: 5px 0px;
+}
+span.checked {
+    text-decoration:line-through ;
+}
+p.summary span{
+    padding: 5px 0px;
+}
+ul{
+    list-style: none;
+    border: 1px solid lightcoral;
+    }
+main, header, ul, .wrapper{
+    background-color: aquamarine;
+    }
+    input{
+        background-color: lightskyblue;
+    }
+    li {
+        text-align: left;}
+p.summary span.star {
+    padding-left: 15px;
+    padding-right: 10px;
+}        
+/* 
+}
+
+li input {
+    display: none;
+}
+   li.write span {
+    display: none;
+} 
+li.write input {
+    display: initial;
+}
+dis-n {
+    display:none;
+} */
