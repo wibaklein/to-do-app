@@ -14,21 +14,24 @@ h1{
     font-family: 'Abril Fatface', serif;
 }
 
-p.summary  {
+div.summary  {
     margin: 0 auto;
     color: white;
     background-color: black;
     padding: 5px 0px;
 }
-span.checked {
+span.completed {
     text-decoration:line-through ;
 }
-p.summary span{
+div.summary span{
     padding: 5px 0px;
 }
 ul{
     list-style: none;
     border: 1px solid lightcoral;
+    }
+ul#todolist li:hover {
+    background-color: #b7eef8;
     }
 main, header, ul, .wrapper{
     background-color: aquamarine;
@@ -38,10 +41,14 @@ main, header, ul, .wrapper{
     }
     li {
         text-align: left;}
-p.summary span.star {
+div.summary span.star {
     padding-left: 15px;
     padding-right: 10px;
-}        
+}  
+ul#todolist .todo_item.completed label {
+    text-decoration: line-through;
+    color: #999;
+  }      
 /* 
 }
 
