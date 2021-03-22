@@ -45,6 +45,12 @@ div.summary span.star {
     padding-left: 15px;
     padding-right: 10px;
 }  
+form > input{
+    font-family: Poppins, sans-serif;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
 ul#todolist .todo_item.completed label  {
     text-decoration: line-through;
     color: #999;
