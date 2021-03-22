@@ -91,4 +91,20 @@ function toggleDone(event) {
 
     updateCounters();
   });
+
+  function cleanUpDoneTodos() {
+    const doneItems = document.querySelectorAll(".completed");
+  
+    // loop through the "done" todo items
+    for (var i = 0; i < doneItems.length; i++) {
+      // and remove them from the DOM
+      doneItems[i].remove();
+    }
+    updateCounters();
+    // update the counters
+  }
+  
+  // retrieve the link
+  // add an event listener for a click on the link to the cleanUpDoneTodos function
+  document.getElementById("clean_up").addEventListener("click", cleanUpDoneTodos);  // ? querySelector werkt niet meer
   
