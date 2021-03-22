@@ -40,7 +40,9 @@ function toggleDone(event) {
   checkboxes[i].addEventListener("change", toggleDone);
 }
   // and use the "toggleDone" function as the callback
+
+  
   document.querySelector("form").addEventListener("submit",function addNewTodo(event) {
     event.preventDefault();
-    console.log("i got clicked");
+   // console.log("i got clicked");
   });
