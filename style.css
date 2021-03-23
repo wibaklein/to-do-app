@@ -63,30 +63,7 @@ ul#todolist .todo_item.completed label  {
     text-decoration: line-through;
     color: rgb(2, 51, 43);
   } 
-  .spin{
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    transform-origin: center;
-  }
-.spin:hover { 
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-    -webkit-transform: rotate(720deg);
-    -moz-transform: rotate(720deg);
-    -o-transform: rotate(720deg);
-    -ms-transform: rotate(720deg);
-    transform: rotate(720deg); 
-    transform-origin:  center;
-}
+
 span#clear { 
     padding: 0px 10px 0px 25px;
 }
@@ -104,8 +81,34 @@ input#new-todo{
 @media screen and (max-width: 768px) {
     body {
         width: 80%;
-
     }
+    ul#todolist li:hover {
+        background-color: none;
+        }
+        .spin{
+            transition: 2s;
+            -webkit-transition: 2s;
+            -moz-transition: 2s;
+            -ms-transition: 2s;
+            -o-transition: 2s;
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+            transform-origin: center;
+          }
+        .spin:active { 
+            transition: 2s;
+            -webkit-transition: 2s;
+            -moz-transition: 2s;
+            -ms-transition: 2s;
+            -o-transition: 2s;
+            -webkit-transform: rotate(720deg);
+            -moz-transform: rotate(720deg);
+            -o-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+            transform: rotate(720deg); 
+            transform-origin:  center;
+        }  
   }
   @media screen and (max-width: 540px) {
     body {
@@ -115,7 +118,7 @@ input#new-todo{
         margin-left: 0px;
     }
     li.todo_item {
-        max-width: 85%;
+        max-width: 80%;
         overflow-wrap: break-word;  
         }
         
@@ -130,4 +133,31 @@ input#new-todo{
         border: 2px solid black;
         border-radius: 0px;
         }
+}
+
+@media screen and (min-width: 768.25px){
+    .spin{
+        transition: 2s;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        transform-origin: center;
+      }
+    .spin:hover { 
+        transition: 2s;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        -webkit-transform: rotate(720deg);
+        -moz-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        transform: rotate(720deg); 
+        transform-origin:  center;
+    }   
 }
