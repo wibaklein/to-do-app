@@ -96,7 +96,7 @@ input#new-todo{
             margin-left: auto;
             transform-origin: center;
           }
-        a:active { 
+        a:focus { 
             transition: 2s;
             -webkit-transition: 2s;
             -moz-transition: 2s;
