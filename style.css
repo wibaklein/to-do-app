@@ -33,7 +33,7 @@ ul{
 list-style: none;
 border: 1px solid #cbffed;
 }
-ul#todolist li:hover {
+li:hover {
 background-color: #cbffed;
 }
 main, header, ul, .wrapper{
@@ -82,11 +82,11 @@ input#new-todo{
     body {
         width: 80%;
     }
-    ul#todolist li:hover {
+    li:hover {
         background-color: none;
         }
-        .spin{
-            transition: 2s;
+        a{ 
+             transition: 2s;
             -webkit-transition: 2s;
             -moz-transition: 2s;
             -ms-transition: 2s;
@@ -96,7 +96,7 @@ input#new-todo{
             margin-left: auto;
             transform-origin: center;
           }
-        .spin:active { 
+        a:active { 
             transition: 2s;
             -webkit-transition: 2s;
             -moz-transition: 2s;
@@ -136,7 +136,7 @@ input#new-todo{
 }
 
 @media screen and (min-width: 768.25px){
-    .spin{
+    a{
         transition: 2s;
         -webkit-transition: 2s;
         -moz-transition: 2s;
@@ -147,7 +147,7 @@ input#new-todo{
         margin-left: auto;
         transform-origin: center;
       }
-    .spin:hover { 
+    a:hover { 
         transition: 2s;
         -webkit-transition: 2s;
         -moz-transition: 2s;
